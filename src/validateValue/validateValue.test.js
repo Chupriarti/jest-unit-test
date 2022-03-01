@@ -14,4 +14,10 @@ describe('validateValue', () => {
     test('Less value', () => {
         expect(validateValue(101)).toBe(false)
     })
+    test('Edge value low', () => {
+        expect(validateValue(0)).toBe(true)
+    })
+    test('Edge value high', () => {
+        expect(validateValue(100)).toBe(true)
+    })
 })
