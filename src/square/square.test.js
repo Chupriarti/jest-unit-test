@@ -10,7 +10,7 @@ describe('square', () => {
             
     })
 
-    test('Correct value', () => {
+    test('Correct calling times', () => {
         // expect(square(2)).toBe(4);
         // expect(square(2)).toBeLessThan(5);
         // expect(square(2)).toBeGreaterThan(3);
