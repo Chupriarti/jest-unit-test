@@ -27,7 +27,7 @@ describe('square', () => {
     })
 
     afterEach(() => {
-            
+        jest.clearAllMocks()
     })
 
     afterAll(() => {
