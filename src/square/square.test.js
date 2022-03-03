@@ -20,6 +20,12 @@ describe('square', () => {
         expect (spyMathPow).toBeCalledTimes(1)
     })
 
+    test('Correct calling no times', () => {
+        const spyMathPow = jest.spyOn(Math, 'pow')
+        square(1)
+        expect (spyMathPow).toBeCalledTimes(0)
+    })
+
     afterEach(() => {
             
     })
